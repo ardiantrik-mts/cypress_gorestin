@@ -41,6 +41,7 @@ describe('GOREST DELETE API TEST', () => {
           expect(res.status).to.equal(401)
           expect(res.isOkStatusCode).to.be.false
           expect(res.body.message).to.equal('Authentication failed')
+
       })
   })
 })

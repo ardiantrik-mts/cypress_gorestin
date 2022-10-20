@@ -1,7 +1,6 @@
 import { faker } from '@faker-js/faker';
 
 describe('GOREST POST API TEST', () => {
-
   const firstName = faker.name.firstName()
   const lastName = faker.name.lastName()
 
