@@ -11,7 +11,7 @@ This automation will automatically run some CRUD API form https://gorest.co.in
 
 ## Pre-Requisite Installation
 
-This code run with NodeJS, so please install it first
+This code run with NodeJS, so please install it first from https://nodejs.org/en/
     
 ## Run it Locally
 
@@ -57,10 +57,10 @@ And then Choose Browser
 
 ![Choose Browser](https://raw.githubusercontent.com/ardiantrik-mts/cypress_gorestinresources/main/Choose%20browser.PNG)
 
-And then click the spec_runner.cs.cy to run all tests
+And then click the spec_runner.cy.js to run all tests
 
 ![Select spec_runner](https://raw.githubusercontent.com/ardiantrik-mts/cypress_gorestinresources/main/Choose%20spec%20runner.PNG)
 ## Demo
 
-Please check the Resources folder for the Demo Video
+Please check the Resources folder for the Demo Video 
 
