@@ -62,5 +62,5 @@ And then click the spec_runner.cy.js to run all tests
 ![Select spec_runner](https://raw.githubusercontent.com/ardiantrik-mts/cypress_gorestinresources/main/Choose%20spec%20runner.PNG)
 ## Demo
 
-Please check the Resources folder for the Demo Video 
+Please check the Resources folder for the Demo Video (https://github.com/ardiantrik-mts/cypress_gorestin/tree/main/cypress/resources)
 
