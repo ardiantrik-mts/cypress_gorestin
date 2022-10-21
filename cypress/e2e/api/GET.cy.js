@@ -32,10 +32,12 @@ describe('GOREST GET API TEST', () => {
           expect(res.isOkStatusCode).to.be.true
           expect(res.body).to.have.keys('id','email','name','gender','status')
           expect(res.body.id).to.equal(274)
-          expect(res.body.name).to.equal('Vinay Gill')
-          expect(res.body.email).to.equal('vinay_gill@hodkiewicz-krajcik.com')
-          expect(res.body.gender).to.equal('male')
-          expect(res.body.status).to.equal('inactive')
+          
+          /* As the data is refreshed daily from gorest API, we couldn't verify the data outcome */
+          // expect(res.body.name).to.equal('Vinay Gill')
+          // expect(res.body.email).to.equal('vinay_gill@hodkiewicz-krajcik.com')
+          // expect(res.body.gender).to.equal('male')
+          // expect(res.body.status).to.equal('inactive')
       })
   })
 

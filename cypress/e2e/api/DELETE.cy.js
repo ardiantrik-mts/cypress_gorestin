@@ -1,8 +1,11 @@
 describe('GOREST DELETE API TEST', () => {
   it('DELETE API success test', () => {
 
-    /*to generate random id from 1000 until 2500 */
+    /*to generate random id from 1000 until 2500,
+      sometimes there will be error because id is invalid/not found. 
+      Please just restart the test if this happen */
     let random = Math.floor(Math.random() * (2500 - 1000 + 1) ) + 1000
+
     const url = 'https://gorest.co.in'
     const path = '/public/v2/users/'+random
 
@@ -24,8 +27,11 @@ describe('GOREST DELETE API TEST', () => {
 
   it('DELETE API Auth Failed test', () => {
 
-    /*to generate random id from 1000 until 2500 */
+    /*to generate random id from 1000 until 2500,
+      sometimes there will be error because id is invalid/not found. 
+      Please just restart the test if this happen */
     let random = Math.floor(Math.random() * (2500 - 1000 + 1) ) + 1000
+
     const url = 'https://gorest.co.in'
     const path = '/public/v2/users/'+random
 
