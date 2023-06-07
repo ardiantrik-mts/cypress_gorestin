@@ -52,7 +52,7 @@ describe('GOREST POST API TEST', () => {
           console.log(res);
           expect(res.status).to.equal(401)
           expect(res.isOkStatusCode).to.be.false
-          expect(res.body.message).to.equal('Authentication failed')
+          expect(res.body.message).to.equal('Invalid token')
       })
   })
 

@@ -20,7 +20,7 @@ describe('GOREST GET API TEST', () => {
 
   it('GET API Detail Success Test', () => {
     cy.request({
-      url: url + path + "/274",
+      url: url + path + "/1631",
       method: 'GET',
           failOnStatusCode: false,
           headers: {
@@ -31,7 +31,7 @@ describe('GOREST GET API TEST', () => {
           expect(res.status).to.equal(200)
           expect(res.isOkStatusCode).to.be.true
           expect(res.body).to.have.keys('id','email','name','gender','status')
-          expect(res.body.id).to.equal(274)
+          expect(res.body.id).to.equal(1631)
           
           /* As the data is refreshed daily from gorest API, we couldn't verify the data outcome */
           // expect(res.body.name).to.equal('Vinay Gill')
