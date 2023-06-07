@@ -2,10 +2,10 @@ import { faker } from '@faker-js/faker';
 
 describe('GOREST UPDATE API TEST', () => {
 
-  /*to generate random id from 2000 until 2500, 
+  /*to generate random id from 1631 until 1659, 
     sometimes there will be error because id is invalid/not found. 
     Please just restart the test if this happen */
-  let random = Math.floor(Math.random() * (2500 - 2000 + 1) ) + 2000
+  let random = Math.floor(Math.random() * (1659 - 1631 + 1) ) + 1631
 
   const tokenNew = "7610fe437444eb016cfa90cab29fa92d53d695abf4e131316c21132ed8eb4f9b"
   const tokenExpired = "10c6221f239f3e2dab00324c2fc1010b99241f01f2d550fd897240b2f5f5d7ae"
@@ -78,7 +78,7 @@ describe('GOREST UPDATE API TEST', () => {
 
   it('PUT API Auth Failed test', () => {
 
-    random = Math.floor(Math.random() * (2500 - 2000 + 1) ) + 2000
+    random = Math.floor(Math.random() * (1659 - 1631 + 1) ) + 1631
 
     const firstName = faker.name.firstName()
     const lastName = faker.name.lastName()
@@ -110,7 +110,7 @@ describe('GOREST UPDATE API TEST', () => {
 
   it('PATCH API Auth Failed test', () => {
 
-    random = Math.floor(Math.random() * (2500 - 2000 + 1) ) + 2000
+    random = Math.floor(Math.random() * (1659 - 1631 + 1) ) + 1631
 
     const firstName = faker.name.firstName()
     const lastName = faker.name.lastName()
@@ -120,7 +120,7 @@ describe('GOREST UPDATE API TEST', () => {
         "name": firstName+" "+lastName
     }
     const url = 'https://gorest.co.in'
-    const path = '/public/v2/users/'+random
+    const path = '/public/v2/users/'+2455
 
     cy.request({
       url: url + path,
@@ -134,7 +134,7 @@ describe('GOREST UPDATE API TEST', () => {
         console.log(res);
         expect(res.status).to.equal(401)
         expect(res.isOkStatusCode).to.be.false
-        expect(res.body.message).to.equal('Authentication failed')
+        expect(res.body.message).to.equal('Invalid token')
       })
   })
 })
